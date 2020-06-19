@@ -1,0 +1,219 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat';
+}
+
+body {background: rgb(225,225,225);}
+
+.center{max-width: 1000px;margin: 0 auto;padding: 0 2%;}
+
+.clear{clear: both;}
+
+header {margin-top: 10px;}
+
+.logo {float: left;}
+
+.logo img {max-width: 100%;}
+
+.menu {float: right;margin-top: 15px;}
+
+.menu a{
+	text-decoration: none;
+	color: black;
+	margin: 0 15px;
+	font-size: 13px;
+}
+
+.menu a.btn-cta{
+	background: #30851d;
+	color: white;
+	padding: 8px 25px;
+	font-size: 16px;
+}
+
+section.topo{
+	background: white;
+	padding: 30px 0;
+}
+
+.texto-topo{
+	margin-top: 20px;
+	float: left;
+	width: 60%;
+	color: #11223f;
+	padding: 0 10px;
+}
+
+.img-topo{
+	float: left;
+	width: 40%;
+}
+
+.texto-topo h2 {
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.texto-topo p {
+	font-size: 20px;
+}
+
+.img-topo img {
+	max-width: 100%;
+}
+
+/* Depoimentos */
+
+section.depoimentos{
+	padding: 30px 0;
+}
+
+section.depoimentos > .center{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.depoimento-single{
+	background: white;
+	background-image: url('../images/quote.png');
+	background-size: 55px 40px;
+	background-position: calc(100% - 10px) 10px;
+	background-repeat: no-repeat;
+	padding: 45px;
+	margin-bottom: 10px;
+	width: 45%;
+	margin-right: 5%;
+}
+
+.depoimento-single p{
+	font-weight: bold;
+	color: black;
+	font-size: 13px;
+}
+
+.depoimento-single span{
+	color: green;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+section.sobre{
+	padding: 20px 0;
+}
+
+.titulo-sobre h2{
+	color: black;
+	padding-bottom: 20px;
+	border-bottom: 3px solid #2bb222;
+	display: inline-block;
+}
+
+/* SObre */
+
+.sobre-single{
+	float: left;
+	width: 33.3%;
+	padding: 20px;
+}
+
+.titulo-single{
+	display: flex;
+}
+
+.titulo-single i{
+	background: #2bb223;
+	width: 20%;
+	font-size: 22px;
+	height: 100px;
+	padding-top: 40px;
+	color: white;
+	text-align: center;
+}
+
+.titulo-single h3{
+	color: black;
+	background: #f1f6f1;
+	width: 80%;
+	height: 100px;
+	padding-top: 35px;
+	text-align: center;
+	margin: 0;
+}
+
+.sobre-conteudo{
+	background: white;
+	padding: 30px;
+	color: black;
+}
+
+/* footer */
+
+footer{
+	padding: 20px 0;
+	background: #2bb222;
+}
+
+.titulo-footer h2{
+	color: white;
+	padding-bottom: 20px;
+	border-bottom: 3px solid white;
+	display: inline-block;
+}
+
+.titulo-footer p{
+	color: white;
+	padding-top: 20px;
+}
+
+.logo-footer{
+	float: right;
+	width: 40%;
+	margin-top: 50px;
+	padding-left: 50px;
+}
+
+.logo-footer img{
+	background: hsl(116, 79%, 72%);
+	display: inline-block;
+	max-width: 100%;
+	text-align: center;
+}
+
+footer.footer-2{
+	background: #effeee;
+	text-align: center;
+	color: black;
+	padding: 20px 0;
+}
+
+.footer-2 a{
+	text-decoration: none;
+	color: #515151;
+	margin: 0 15px;
+	font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.texto-topo,
+	.img-topo{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.depoimento-single{
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.sobre-single{width: 100%;}
+}
+
+@media screen and (max-width: 598px) {
+	.menu .btn-cta{
+		display: block;
+		margin-top: 10px;
+	}
+}
